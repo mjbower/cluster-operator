@@ -1,0 +1,20 @@
+# permissions for end users to view maerskclusters.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: maerskcluster-viewer-role
+rules:
+- apiGroups:
+  - cache.mjbower.com
+  resources:
+  - maerskclusters
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - cache.mjbower.com
+  resources:
+  - maerskclusters/status
+  verbs:
+  - get
