@@ -1,7 +1,0 @@
-apiVersion: cache.mjbower.com/v1
-kind: MaerskCluster
-metadata:
-  name: maerskcluster-sample
-spec:
-  # Add fields here
-  foo: bar
